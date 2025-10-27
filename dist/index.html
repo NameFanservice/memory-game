@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <script type="module" crossorigin src="/assets/index-D08CNrJw.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DYM9UjIY.css">
+  </head>
+  <body>
+    <div id="controls">
+      <select id="difficulty">
+        <option value="4">Легкий (4 пары)</option>
+        <option value="6">Средний (6 пар)</option>
+        <option value="8">Сложный (8 пар)</option>
+      </select>
+      <button id="restart-btn">Restart</button>
+      <div id="moves">Moves: 0</div>
+      <div id="timer">Time: 0 s</div>
+    </div>
+
+    <div id="game-board"></div>
+
+    <div id="win-modal" class="hidden">
+      <div class="modal-content">
+        <h2>🎉 Поздравляем!</h2>
+        <p id="win-text"></p>
+        <button id="play-again-btn">Сыграть снова</button>
+      </div>
+    </div>
+
+  </body>
+</html>
